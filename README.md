@@ -1,13 +1,34 @@
 # ML-Creditworthiness
 
-A bank wants to predict the creditworthiness of its customers. Based on the customer
-records, the credit history, etc., a customer should be classified as creditworthy or unworthy
-of credit. It is five times more ‘expensive’ for the bank to rate a customer who is unworthy
-of credit as creditworthy than vice versa. In addition, not all information is available for all
-customers. For 1,000 representatively selected customers, the creditworthiness is known.
-For these customers the following data has been collected. (Features for which not all
-values are known are marked with the addition “incomplete”.)
+This project focuses on predicting the creditworthiness of customers for a bank. The goal is to classify customers as creditworthy or unworthy of credit based on their records, credit history, and other features. Given the higher cost associated with misclassifying a creditworthy customer as unworthy, special attention has been given to minimizing false negatives.
 
-This is to develop a predictive model that assesses the creditworthiness of future
-clients. It can be assumed that for these clients as well, there are missing values in the
-features “Purpose”, “Present employment since”, “Job” and “Foreign worker”
+## Problem Statement
+
+A bank wants to predict the creditworthiness of its customers. It is significantly more costly for the bank to incorrectly classify a customer as creditworthy when they are actually unworthy of credit. Therefore, the model aims to minimize this risk while handling cases where information might be incomplete.
+
+For this project, data from 1,000 representatively selected customers has been used. The dataset includes features related to credit history and customer records, with some features having missing values.
+
+## Models Used
+
+Several machine learning models have been employed to develop the predictive model:
+
+- **Logistic Regression**: A statistical model that uses a logistic function to model a binary dependent variable.
+- **Decision Tree**: A decision support tool that uses a tree-like graph of decisions and their possible consequences.
+- **Random Forest**: An ensemble method that constructs multiple decision trees and merges their results to improve accuracy and control overfitting.
+
+## Dataset
+
+The dataset includes:
+- Credit history
+- Customer records
+- Other relevant features
+
+Note: Some features have missing values, which are handled as part of the preprocessing step.
+
+## Getting Started
+
+To get started with this project, clone this repository and navigate to the `ML-Creditworthiness` directory. The directory includes scripts for data preprocessing, model training, and evaluation.
+
+```bash
+git clone https://github.com/yourusername/ML-Creditworthiness.git
+cd ML-Creditworthiness
